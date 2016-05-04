@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#ChangeInSpace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#ChangeInSpace">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#changeInTime"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Navigate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Navigate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pond"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#bathing -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#bathing">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#trap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#catch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#catch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#found"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#changeInTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#changeInTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Time"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#fall_Into -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#fall_Into">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pond"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#tripOver"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#found -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#found">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#looking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#looking"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasPerspective -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasPerspective">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Story"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Dog"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasPerspective"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasReaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasReaction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Dog"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasReaction"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hold -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hold"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdNet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdNet">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hold"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Net"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdPail -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdPail">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdNet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pail"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#jumps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#jumps"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#looking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#looking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#running -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#running"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#trap -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#trap"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#tripOver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#tripOver">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#TreeLog"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#running"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#withHands -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#withHands">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#catch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#withNet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#withNet">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#catch"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#holdNet"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Perspective -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Perspective">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Angry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Angry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#BathRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#BathRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InDoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#hasReaction"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Frog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Animate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Happy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Happy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Idle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Idle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InAnimate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InAnimate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InDoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InDoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#LivingRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#LivingRoom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InDoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Net -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Net">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InAnimate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#OutDoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#OutDoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InAnimate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#OutDoor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Sad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Sad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Reaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Space"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Story -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Story"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#TreeLog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#TreeLog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#InAnimate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Woods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Woods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#OutDoor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pramod -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Pramod">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pramod/ontologies/2016/2/untitled-ontology-22#Boy"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
